@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coș de Cumpărături</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coș de Cumpărături</h1>
+    <form id="product-form">
+        <label for="product-name">Nume Produs:</label>
+        <input type="text" id="product-name" required>
+        <label for="product-quantity">Cantitate:</label>
+        <input type="number" id="product-quantity" min="1" required>
+        <button type="submit">Adaugă în Coș</button>
+    </form>
+    <h2>Produse în Coș</h2>
+    <ul id="cart-items"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
