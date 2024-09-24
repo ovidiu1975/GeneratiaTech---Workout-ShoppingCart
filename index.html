@@ -13,10 +13,22 @@
         <input type="text" id="product-name" required>
         <label for="product-quantity">Cantitate:</label>
         <input type="number" id="product-quantity" min="1" required>
-        <button type="submit">Adaugă în Coș</button>
+        <button type="submit">Adaugă în Coș!</button>
     </form>
-    <h2>Produse în Coș</h2>
-    <ul id="cart-items"></ul>
+    <section id="cart">
+        <h2>Produse în Coș</h2>
+        <ul id="cart-items"></ul>
+    </section>
+
+    <template id="cart-item-template">
+        <li>
+            <span class="product-name"></span>
+            <span class="product-quantity"></span>
+            <button class="modify-quantity">Modifică</button>
+            <button class="delete-product">Șterge</button>
+        </li>
+    </template>
+
     <script src="script.js"></script>
 </body>
 </html>
