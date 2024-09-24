@@ -1,24 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     margin: 20px;
+    background-color: #8bc6ec;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    border: 1px solid #01416b;
+    border-radius: 5px;
+    width: 550px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 form {
     margin-bottom: 20px;
+
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-input {
-    margin-bottom: 10px;
-}
-
-button {
-    margin-top: 10px;
-}
 
 #cart-items {
     list-style-type: none;
@@ -31,6 +38,116 @@ button {
     margin-bottom: 10px;
 }
 
-.product-name, .product-quantity {
-    margin-right: 10px;
+.product-name
+{
+    background-color: #8bc6ec;
+    width: 60%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #01416b;
+    box-sizing: border-box;
+    text-align: left;
+
+
 }
+.product-quantity {
+    background-color: #ecdd8b;
+    width: 10%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #01416b;
+    box-sizing: border-box;
+    text-align: center;
+
+   
+}
+
+
+/* --------------------------  */
+
+
+
+input[type=text]  {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #01416b;
+    box-sizing: border-box;
+    text-align: left;
+    }
+input[type=number]  {
+    width: 51%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-color: #01416b;
+    box-sizing: border-box;
+    text-align: left;
+    }
+
+button {
+    background: #ff3c01;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #01416b;
+    border-radius: 4px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 13%;
+    margin-top: 5px;
+}
+button[type="submit"] {
+    background: #016fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #01416b;
+
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    width: 48%;
+}
+
+button:hover {
+    filter: brightness(150%);
+}
+button:active,
+button:focus {
+    filter: brightness(150%);
+}
+
+.antet {
+    background-color: #01416b;
+    width: 540px;
+    margin-top: 5px;
+    padding: 5px;
+    height: 25px;
+}
+.antet p {
+    margin-top: 3px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+
+}
+
