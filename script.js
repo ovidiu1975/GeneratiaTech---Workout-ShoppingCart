@@ -21,7 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function addProduct(name, quantity) {
-        cart.push({ name, quantity });
+        
+        const existingProduct = cart.find(item => item.name === name);
+        if (existingProduct) {
+            existingProduct.quantity += quantity;
+        } else {
+            cart.push({ name, quantity });
+        }
+            
+   
+            
+          
+
         saveCart();
         renderCart();
     }
